@@ -1,0 +1,72 @@
+<html>
+<head>
+<style>
+table{
+border:2px solid black; 
+width:30%;
+background-color:grey;
+}
+td{
+padding:15px;
+height:100%;
+color:white;
+}
+input{
+width:100%;
+height:200%;
+background-color:white;
+}
+button{
+width:100%;
+height:200%;
+}
+button:hover{
+color: #8AC007;
+font-weight:bold;
+}
+</style>
+
+	<script type="text/javascript">
+	function cals(but) {
+	document.calcform.txt1.value+=but;
+}
+
+ 
+</script>
+</head>
+<body>
+<form name="calcform">
+<table border="2">
+<tr>
+<td colspan="5"><input type="text" name="txt1" id="demo" ></td></tr>
+<tr>
+<td align:center>
+<input type="button" value="1" name="a" onclick="cals(a.value)" class="p"> </td>
+<td align:center>
+<input type="button" value="2" name="b" onclick="cals(b.value)" class="p"></td>
+<td align:center>
+<input type="button" value="3" name="c" onclick="cals(c.value)" class="p"></td>
+<td align:center>
+<input type="button" value="+" name="d" onclick="cals(d.value)" class="p"></td></tr>
+<tr>
+<td align:center><input type="button" value="4"  name="e" onclick="cals(e.value)" class="p"></td>
+<td align:center><input type="button" value="5" name="f" onclick="cals(f.value)" class="p"></td>
+<td align:center><input type="button" value="6" name="h" onclick="cals(h.value)" class="p"></td>
+<td align:center><input type="button" value="-" name="i" onclick="cals(i.value)"  class="p"></td>
+</tr>
+<tr>
+<td align:center><input type="button" value="7" name="j" onclick="cals(j.value)" class="p"></td>
+<td align:center><input type="button" value="8" name="k" onclick="cals(k.value)"  class="p"></td>
+<td align:center><input type="button" value="9" name="l" onclick="cals(l.value)"  class="p"></td>
+<td align:center><input type="button" value="*" name="p" onclick="cals(p.value)" ></td>
+</tr>
+<tr>
+<td align:center><input type="button" value="c" onclick="document.calcform.reset();"  class="p";></td>
+<td align:center><input type="button" value="0" name="but2" onclick="cals(but2.value)" class="p"></td>
+<td align:center><input type="button" value="=" name="but3" onclick="document.calcform.txt1.value=eval(document.calcform.txt1.value)" class="p"></td>
+<td align:center><input type="button" value="/" name="but4" onclick="cals(but4.value)" class="p"></td>
+</tr>
+</table>
+</form>
+</body>
+</html
